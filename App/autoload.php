@@ -3,7 +3,7 @@
     {
         echo "<pre>";
         var_dump($var);
-        echo "<pre>";
+        echo "</pre>";
     }
 
     function __autoload($name)

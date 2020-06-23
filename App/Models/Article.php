@@ -10,4 +10,5 @@
         public const UNIQUE_COLS = ['title', 'content'];
         public $title = NULL;
         public $content = NULL;
+        public $for_logged = false;
     }

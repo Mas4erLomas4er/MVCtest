@@ -8,7 +8,6 @@
 </head>
 <body>
     <?php
-        session_start();
         $article = $this->data['article'];
     ?>
     <a href="index.php ">На главную</a><br>
