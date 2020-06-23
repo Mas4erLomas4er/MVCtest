@@ -7,7 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    <?php $article = $this->data['article'] ?>
+    <?php
+        session_start();
+        $article = $this->data['article'];
+    ?>
     <a href="index.php ">На главную</a><br>
     <article>
         <h1><?= $article->title ?></h1>

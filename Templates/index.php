@@ -7,6 +7,9 @@
     <title>Document</title>
 </head>
 <body>
+    <?php
+        session_start();
+    ?>
     <?php if (isset($_SESSION['logged_user'])) : ?>
         <a href="/?ctrl=User&user=<?= $_SESSION['logged_user']->login ?>"><?= $_SESSION['logged_user']->login ?></a>
         <a href="/?ctrl=SignOut">Выйти</a><br>

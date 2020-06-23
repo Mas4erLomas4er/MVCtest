@@ -8,6 +8,7 @@
 </head>
 <body>
     <?php
+        session_start();
         $user = $this->data['user'];
     ?>
     <a href="index.php ">На главную</a><br>
@@ -34,6 +35,7 @@
                 {
                     echo "Чувак, а ты мощный!";
                     $_SESSION['logged_user'] = $user;
+                    setcookie('is_logged', true);
                     header('Location: /');
                 }
                 else
